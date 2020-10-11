@@ -55,3 +55,9 @@ ha be van kapcsolva a helymeghatározás.
 
 - __6.5__ Az alapvető biztonsági protokollok.
   - __6.5.1__ API kulcs elrejtése a buildconfig-ban
+
+# 8. Képernyőtervek
+- __8.1__ 0. Fragment : https://www.figma.com/file/U9TEmGe0kFJ0tU4DvgLXtq/Covid-19-Tracker?node-id=11%3A18
+- __8.2__ 1. Fragment : https://www.figma.com/file/U9TEmGe0kFJ0tU4DvgLXtq/Covid-19-Tracker?node-id=11%3A22
+- __8.3__ 2. Fragment : https://www.figma.com/file/U9TEmGe0kFJ0tU4DvgLXtq/Covid-19-Tracker?node-id=11%3A25
+
