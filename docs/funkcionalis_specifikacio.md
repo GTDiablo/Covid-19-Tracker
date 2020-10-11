@@ -56,6 +56,9 @@ ha be van kapcsolva a helymeghatározás.
 - __6.5__ Az alapvető biztonsági protokollok.
   - __6.5.1__ API kulcs elrejtése a buildconfig-ban
 
+# 7. Forgatókönyv
+Az app megnyitásakor egy üdvözlő üzenet jelenik meg, majd 2s után továbblép az 1. fragmentre. Az 1. fragmenten egy keresőmező található, ennek segítségével lesz reaktív az app. Ide gépelheti be a kíváng ország nevét a felhasználó. Amint a felhasználó abba hagyta az írást, lehetőségek jelennek meg, melyek a begépelt szövegre dob ki találtokat pl:U -> USA,Uganda,Uruguay. Ezután a felhasználó kiválasztja az általa keresett országot. Ekkor átlép egy új fragmentbe, ami az adott ország COVID-os adatait fogja tartalmazni.
+
 # 8. Képernyőtervek
 - __8.1__ 0. Fragment : https://www.figma.com/file/U9TEmGe0kFJ0tU4DvgLXtq/Covid-19-Tracker?node-id=11%3A18
 - __8.2__ 1. Fragment : https://www.figma.com/file/U9TEmGe0kFJ0tU4DvgLXtq/Covid-19-Tracker?node-id=11%3A22
