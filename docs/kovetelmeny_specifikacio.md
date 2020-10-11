@@ -16,9 +16,28 @@ A fertőzés a világ minden országában megjelent már. A helyzet súlyossága
 # 2. Vágyálomrendszer leírása
 Célunk egy olyan mobilos applikáció létrehozása, amivel nyomon tudjuk követni a Covid-19 adatokat világszerte, így naprakészek tudunk lenni az aktuális helyzettel kapcsolatban. Az applikáció adatot fog majd szolgáltatni az új fertőzöttek számáról, az eddig azonosított esetek számáról, a halálesetek számáról, a meggyógyultak számáról napi felosztásban és összesen is. Minden adathoz nagyon könnyen férhetünk majd hozzá egy egyszerű és átlátható UI-n keresztül.
 
-# 3. Használati esetek
-- __3.1__ Day One:
-Az adott országban napok
+# 3. Rendszerre vonatkozó pályázat/törvények/rendeletek/szabványok és ajánlások
+- **3.1** Törvények és Rendeletek:
+  - Felhasználói adatokra vonatkozó törvények:
+    - [https://europa.eu/youreurope/citizens/consumers/internet-telecoms/data-protection-online-privacy/index_hu.htm](https://europa.eu/youreurope/citizens/consumers/internet-telecoms/data-protection-online-privacy/index_hu.htm)
+  - Appunkra egy meghatározó európai vagy más országbeli törvény sem érvényes. Általában egyes országok megszabják, hogy az oldal, valamint az azt üzemeltető cég mit csinálhat és mit nem csinálhat a felhasználóktól gyűjtött adatokkal. Szolgáltatásunk felsoroltak közül egy módszert sem alkalmaz:
+    - *Nem tárolunk adatokat a felhasználóink oldalán (legyen az böngésző vagy gép).*
+    - *Nem használunk sütiket vagy más felhasználókövető eszközt.*
+    - *Nem naplózunk semmit az oldalon történő tevékenységek közül.*
+- **3.2** Szabványok:
+  - HTTP (protocol) - A HTTP (HyperText Transfer Protocol) egy információátviteli protokoll elosztott, kollaboratív, hipermédiás, információs rendszerekhez. A HTTP fejlesztését a World Wide Web Consortium és az Internet Engineering Task Force koordinálta RFC-k formájában. Az 1999-ben kiadott RFC 2616 definiálja a HTTP/1.1-et, amit 2015 végére leváltott a HTTP/2.0-ás verzió, amit az RFC 7540 definiál. Hivatalosan ez a legújabb protokoll. A HTTP egy kérés-válasz alapú protokoll kliens és szerver között. A HTTP-klienseket a „user agent” gyűjtőnévvel is szokták illetni. A user agent jellemzően, de nem feltétlenül webböngésző.A HTTP a TCP/IP réteg felett helyezkedik el. A HTTP implementálható más megbízható szállítási réteg felett is, akár az interneten, akár más hálózaton. Kizárólagosan TCP protokollt használ, mivel az adatveszteség nem megengedhető.
+  - [SSL](https://developer.android.com/training/articles/security-ssl) - Az SSL tanúsítványok arra szolgálnak, hogy létrejöhessen egy biztonságos, titkosított csatorna a kliens és a szerver között. Bizonyos információknak, mint a hitelkártya adatok, fiókbelépéshez szükséges adatok és egyéb kényes információk átvitelének titkosítás alatt kell történnie, hogy kizárjuk az adatok kiszivárgását.
+
+    SSL tanúsítvánnyal adataink titkosításon esnek át, mielőtt azok Interneten keresztül átvitelre kerülnének. A titkosított adatot csak a célszerver képes lefordítani. Ez biztosítja, hogy a weboldalon megadott adatainkat nem tulajdoníthatják el.
+
+    2014. augusztus 6-tól kezdve a Google bejelentette: az SSL tanúsítvánnyal rendelkező weboldalak előkelőbb helyre kerülnek a keresőmotorjukban. Ez is egy előny, amiért megéri SSL-t használni.
+
+    A tanúsítvány maga base64-es módon kódolt adatokat tartalmaz a kiállításról, ezen kívül tartalmazza a titkosításhoz szükséges publikus kulcsot, a digitális aláírás hitelesítését és a privát kulccsal létrehozott digitális aláírást is.
+
+    Az SSL tanúsítványt szerveroldalon kell elhelyezni. Az olyan weboldalak esetében, amelyek biztonságát egy SSL tanúsítvány garantálja, https:// előtaggal fog kezdődni az URL. A hitelesítés fajtájától függően a böngésző lakat ikonnal, illetve a szervezet nevével is jelezheti a biztonságos kapcsolat meglétét.
+
+
+
 
 # 4. Jelenlegi üzleti folyamatok modellje
 - A jelenlegi pandémiás helyzet alatt, a 
