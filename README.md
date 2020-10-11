@@ -1,4 +1,4 @@
-# **:ambulance: Covid-19-Tracker**
+# **:ambulance: Covid-19 Tracker**
 
 ![GitHub contributors](https://img.shields.io/github/contributors/GTDiablo/Covid-19-Tracker?color=green) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/GTDiablo/Covid-19-Tracker?color=green)
 
