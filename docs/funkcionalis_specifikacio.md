@@ -22,6 +22,14 @@ Célunk egy olyan mobilos applikáció létrehozása, amivel nyomon tudjuk köve
     legyen az aktuális megfertőződések, halálesetek, kigyógyulások, napi-, heti- vagy akár összes előfordulások számaival. __*Honnan szerezhetünk ezekről az információkról tudomást?*__
     A híradóból, a rádióból, vagy ha az interneten utánakeresünk. Ezek a módszerek, hírfolyamok nem elég gyorsak, nem elég FRISSEK és nem elég közvetlenek.
 
+# 5. Igényelt üzleti folyamatok modellje
+- Ezeket az információs csatornákat váltja le az applikációnk, mely __*gyorsabb*__ és __*állandóan frissülő*__ információval látja el felhasználóit.
+- Az időhöz kötött információszerzést (TV,rádió), felváltja az azonnali információ.
+- Mivel a telefon manapság már munka és tanulóeszköz ezért sokkal közvetlenebb és gyorsabb
+  módja az adatszerzésnek.
+- Egy keresőmező segítségével bármely ország részletes adatait le tudjuk kérdezni.
+- A TV-ben, rádióban halott információ nem elég részletes. Appunk erről is gondoskodik, hiszen, ha a feljegyzett információk mindegyikével nem is de a legnagyobb részéről tartalmaz információt.
+
 
 
 # 6. Követelménylista
