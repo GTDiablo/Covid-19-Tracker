@@ -17,9 +17,20 @@ A fertőzés a világ minden országában megjelent már. A helyzet súlyossága
 Célunk egy olyan mobilos applikáció létrehozása, amivel nyomon tudjuk követni a Covid-19 adatokat világszerte, így naprakészek tudunk lenni az aktuális helyzettel kapcsolatban. Az applikáció adatot fog majd szolgáltatni az új fertőzöttek számáról, az eddig azonosított esetek számáról, a halálesetek számáról, a meggyógyultak számáról napi felosztásban és összesen is. Minden adathoz nagyon könnyen férhetünk majd hozzá egy egyszerű és átlátható UI-n keresztül.
 
 # 6. Követelménylista
-- Egyszerű felület
-- Könnyű kezelhetőség
-- Az alapvető biztonsági és adatvédelmi protokollok
-- Jó konfiguráció váltás kezelés
-- Jó optimalizáció
-- Valós idejű adatok szolgáltatása
+- __6.1__ Egyszerű felület
+  - __6.1.1__ RecyclerView adapter adaptálja a RecyclerViewban a HTTP válaszban érkező adatokat,
+  a keresési mezőbe beírt országhoz megfelelően.
+  - __6.1.2__ Csak egy keresőmező a kezdőképernyőn megjelenő UI -> átláthatóság.
+- __6.2__ Könnyed keresés:
+  - __6.2.3__ Keresés előtt a jelenlegi tartózkodási helyhez kapcsolódó adatok mutatása,
+ha be van kapcsolva a helymeghatározás.
+  - __6.2.2__ Kereső mezőbe való gépelés közben debouncing alkalmazása -> 0.5s.
+  
+
+- __6.3__ Verziófüggetlenség
+  - __6.3.1__ Android 21 API-ig bármilyen androidos telefonon futtatható.
+- __6.4__ Valós idejű adatok szolgáltatása HTTP protokollon keresztül
+  - __6.4.1__ Retrofit és a Moshi gondoskodik a HTTP lekérdezéseinkről, valamin az abből kapott JSON adatformátumú adatok appunkba való adaptálásáról.
+
+- __6.5__ Az alapvető biztonsági protokollok.
+  - __6.5.1__ API kulcs elrejtése a buildconfig-ban
