@@ -15,3 +15,6 @@ A fertőzés a világ minden országában megjelent már. A helyzet súlyossága
 
 # 2. Vágyálomrendszer leírása
 Célunk egy olyan mobilos applikáció létrehozása, amivel nyomon tudjuk követni a Covid-19 adatokat világszerte, így naprakészek tudunk lenni az aktuális helyzettel kapcsolatban. Az applikáció adatot fog majd szolgáltatni az új fertőzöttek számáról, az eddig azonosított esetek számáról, a halálesetek számáról, a meggyógyultak számáról napi felosztásban és összesen is. Minden adathoz nagyon könnyen férhetünk majd hozzá egy egyszerű és átlátható UI-n keresztül.
+
+# 7. Irányított és szabad szöveges riportok szövege
+A megválaszolatlan kérdéseket majd élőben feltesszük.
