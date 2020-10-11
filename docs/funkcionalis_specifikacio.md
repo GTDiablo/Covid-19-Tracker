@@ -13,3 +13,5 @@ Jelenleg a fertőzöttek száma megközelíti a 38 milliót, több, mint 1 milli
 
 A fertőzés a világ minden országában megjelent már. A helyzet súlyossága, az új fertőzések száma jelen pillanatban a világszerte növekszik. Ebből az okból kifolyólag szeretnénk létrehozni egy olyan applikációt, amivel nyomon lehet követni a járvány terjedését. Az applikáció rendelkezni fog majd adattal a világ minden országáról, így segítségével naprakészek lehetünk.
 
+# 2. Vágyálomrendszer leírása
+Célunk egy olyan mobilos applikáció létrehozása, amivel nyomon tudjuk követni a Covid-19 adatokat világszerte, így naprakészek tudunk lenni az aktuális helyzettel kapcsolatban. Az applikáció adatot fog majd szolgáltatni az új fertőzöttek számáról, az eddig azonosított esetek számáról, a halálesetek számáról, a meggyógyultak számáról napi felosztásban és összesen is. Minden adathoz nagyon könnyen férhetünk majd hozzá egy egyszerű és átlátható UI-n keresztül.
