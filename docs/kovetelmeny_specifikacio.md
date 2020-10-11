@@ -16,16 +16,6 @@ A fertőzés a világ minden országában megjelent már. A helyzet súlyossága
 # 2. Vágyálomrendszer leírása
 Célunk egy olyan mobilos applikáció létrehozása, amivel nyomon tudjuk követni a Covid-19 adatokat világszerte, így naprakészek tudunk lenni az aktuális helyzettel kapcsolatban. Az applikáció adatot fog majd szolgáltatni az új fertőzöttek számáról, az eddig azonosított esetek számáról, a halálesetek számáról, a meggyógyultak számáról napi felosztásban és összesen is. Minden adathoz nagyon könnyen férhetünk majd hozzá egy egyszerű és átlátható UI-n keresztül.
 
-3. Jelenlegi üzleti folyamatok
-3.1. Autók törzsadatainak nyilvántartása
-3.1.1. Új autó beszerzése: az ügyvezető végzi, autó megvásárlása => füzetbe való bejegyzése
-3.1.2. Autó eladása: az ügyvezető végzi, füzetben "ELADÁS" bejegyzés => az autó értékesítése
-3.2. Kölcsönzés: telephelyen az ügyvezető, vagy jogosult munkatárs végzi, tipikusan 2 lépésben, az 1. lépés opcionális:
-3.2.1. telefonos igénylés esetén => füzetbe foglalás bejegyzése
-3.2.2. telephelyen szerződéskötés az ügyféllel => fényképek készítése => füzetben kiadás adminisztrálása
-...
-
-
 # 3. Rendszerre vonatkozó pályázat/törvények/rendeletek/szabványok és ajánlások
 - **3.1** Törvények és Rendeletek:
   - Felhasználói adatokra vonatkozó törvények:
@@ -48,6 +38,20 @@ Célunk egy olyan mobilos applikáció létrehozása, amivel nyomon tudjuk köve
 
     Az SSL tanúsítványt szerveroldalon kell elhelyezni. Az olyan weboldalak esetében, amelyek biztonságát egy SSL tanúsítvány garantálja, https:// előtaggal fog kezdődni az URL. A hitelesítés fajtájától függően a böngésző lakat ikonnal, illetve a szervezet nevével is jelezheti a biztonságos kapcsolat meglétét.
 
+
+# 4. Jelenlegi üzleti folyamatok modellje
+- A jelenlegi pandémiás helyzet alatt, a 
+    [COVID SARS-2](https://hu.wikipedia.org/wiki/SARS-CoV-2) emberek ezreit fertőzi meg naponta. Fontos, a vírus elkerülése érdekében, hogy mindenki naprakész és tájékozott
+    legyen az aktuális megfertőződések, halálesetek, kigyógyulások, napi-, heti- vagy akár összes előfordulások számaival. __*Honnan szerezhetünk ezekről az információkról tudomást?*__
+    A híradóból, a rádióból, vagy ha az interneten utánakeresünk. Ezek a módszerek, hírfolyamok nem elég gyorsak, nem elég FRISSEK.
+
+# 5. Igényelt üzleti folyamatok modellje
+- Ezeket az információs csatornákat váltja le az applikációnk, mely __*gyorsabb*__ és __*állandóan frissülő*__ információval látja el felhasználóit.
+- Az időhöz kötött információszerzést (TV,rádió), felváltja az azonnali információ.
+- Mivel a telefon manapság már munka és tanulóeszköz ezért sokkal közvetlenebb és gyorsabb
+  módja az adatszerzésnek.
+- Egy keresőmező segítségével bármely ország részletes adatait le tudjuk kérdezni.
+- A TV-ben, rádióban halott információ nem elég részletes. Appunk erről is gondoskodik, hiszen, ha a feljegyzett információk mindegyikével nem is de a legnagyobb részéről tartalmaz információt.
 
 # 6. Követelménylista
 - Egyszerű felület
