@@ -16,6 +16,12 @@ A fertőzés a világ minden országában megjelent már. A helyzet súlyossága
 # 2. Vágyálomrendszer leírása
 Célunk egy olyan mobilos applikáció létrehozása, amivel nyomon tudjuk követni a Covid-19 adatokat világszerte, így naprakészek tudunk lenni az aktuális helyzettel kapcsolatban. Az applikáció adatot fog majd szolgáltatni az új fertőzöttek számáról, az eddig azonosított esetek számáról, a halálesetek számáról, a meggyógyultak számáról napi felosztásban és összesen is. Minden adathoz nagyon könnyen férhetünk majd hozzá egy egyszerű és átlátható UI-n keresztül.
 
+# 3. Használati esetek
+- __3.1__ Day One: Egy adott országban az első naptól eltelt *MINDEN NAP* napi adatai.
+- __3.2__ By Country: Egy adott országban az eddigi összes adat két dátum között.
+- __3.3__ Summary: Az összes adat a COVID elterjedése óta, összes ország összegezve.
+- __3.4__ Countries: Az összes ország kilistázása, mely szerepel az adatbázisban.
+
 # 4. Jelenlegi üzleti folyamatok modellje
 - A jelenlegi pandémiás helyzet alatt, a 
     [COVID SARS-2](https://hu.wikipedia.org/wiki/SARS-CoV-2) emberek ezreit fertőzi meg naponta. Fontos, a vírus elkerülése érdekében, hogy mindenki naprakész és tájékozott
@@ -29,7 +35,6 @@ Célunk egy olyan mobilos applikáció létrehozása, amivel nyomon tudjuk köve
   módja az adatszerzésnek.
 - Egy keresőmező segítségével bármely ország részletes adatait le tudjuk kérdezni.
 - A TV-ben, rádióban halott információ nem elég részletes. Appunk erről is gondoskodik, hiszen, ha a feljegyzett információk mindegyikével nem is de a legnagyobb részéről tartalmaz információt.
-
 
 
 # 6. Követelménylista
