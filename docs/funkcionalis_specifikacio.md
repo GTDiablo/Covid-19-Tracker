@@ -64,6 +64,6 @@ Az app megnyitásakor egy üdvözlő üzenet jelenik meg, majd 2s után továbbl
 - __8.2__ 1. Fragment : https://www.figma.com/file/U9TEmGe0kFJ0tU4DvgLXtq/Covid-19-Tracker?node-id=11%3A22
 - __8.3__ 2. Fragment : https://www.figma.com/file/U9TEmGe0kFJ0tU4DvgLXtq/Covid-19-Tracker?node-id=11%3A25
 
-# Funkció - követelmény megfeleltetés
+# 9. Funkció - követelmény megfeleltetés
 Mivel telefonos applikáció, letöltés után egyből használható, így a kompaktság egyből érzékelhető. Az app megnyitása után látható a pofon egyszerű UI, a könnyű kezelhetőség itt érvényesül, hiszen az app fő felületén, miután a felhasználó beírta a keresett országát, kereső gombra sem kell rákattintania. Az ország kiválasztása, azonnali naprakész információt eredményez, melyet a [covidAPI](https://github.com/javieraviles/covidAPI) biztosít.
 
