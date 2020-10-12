@@ -2,7 +2,7 @@
 
 ![GitHub contributors](https://img.shields.io/github/contributors/GTDiablo/Covid-19-Tracker?color=green) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/GTDiablo/Covid-19-Tracker?color=green)
 
-_A projekt egy egyetemi tárgyhoz (Szoftverfejlesztési Módszertanok) szükséges Mobile Applikáció implementációja._
+_A projekt egy egyetemi tárgyhoz (Szoftverfejlesztési Módszertanok) szükséges Natív Android Applikáció implementációja._
 
 **:handshake: Kontribútorok:**
 - [Raska Gergely](www.github.com/wenjaze)
