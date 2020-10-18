@@ -47,3 +47,22 @@ ha be van kapcsolva a helymeghatározás.
 
 - __4.5__ Az alapvető biztonsági protokollok.
   - __4.5.1__ API kulcs elrejtése a buildconfig-ban
+
+### 5.0 Funkcionális terv
+
+### 6.0 Fizikai környezet
+- Operációs rendszer:
+    - Windows 10
+    - Ubuntu 20.04.1         
+- Fejlesztő eszközök:
+    - Android Studio
+- Programozási nyelv:
+    - Kotlin    
+- Keretrendszer:
+    - Gradle
+ - Felhasznált API-k:
+    - Retrofit
+    - Moshi
+    - [Coronavirus COVID19 API](https://documenter.getpostman.com/view/10808728/SzS8rjbc)
+ - Platform:
+    - Android
