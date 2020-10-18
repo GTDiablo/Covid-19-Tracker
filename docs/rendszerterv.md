@@ -22,3 +22,9 @@ Célunk egy olyan mobilos applikáció létrehozása, aminek segítségével nyo
     - ***2.3.7** Bug keresése és kód refaktoriálása, ha szükséges. →*
     - ***2.3.8** Applikáció konténer létrehozása és locálist tesztelése. →*
     - ***2.3.9** Szolgáltatás publikációja. →*
+    
+### 3.0 Üzleti folyamatok modellje
+- A jelenlegi pandémiás helyzet alatt, a 
+    [COVID SARS-2](https://hu.wikipedia.org/wiki/SARS-CoV-2) emberek ezreit fertőzi meg naponta. Fontos, a vírus elkerülése érdekében, hogy mindenki naprakész és tájékozott
+    legyen az aktuális megfertőződések, halálesetek, kigyógyulások, napi-, heti- vagy akár összes előfordulások számaival. __*Honnan szerezhetünk ezekről az információkról tudomást?*__
+    A híradóból, a rádióból, vagy ha az interneten utánakeresünk. Ezek a módszerek, hírfolyamok nem elég gyorsak, nem elég FRISSEK.
