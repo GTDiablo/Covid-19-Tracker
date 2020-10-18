@@ -64,5 +64,5 @@ ha be van kapcsolva a helymeghatározás.
     - Retrofit
     - Moshi
     - [Coronavirus COVID19 API](https://documenter.getpostman.com/view/10808728/SzS8rjbc)
- - Platform:
-    - Android
+ - Cél platform:
+    - Android 10 és újabb verziók
