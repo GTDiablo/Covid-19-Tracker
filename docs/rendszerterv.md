@@ -49,6 +49,20 @@ ha be van kapcsolva a helymeghatározás.
   - __4.5.1__ API kulcs elrejtése a buildconfig-ban
 
 ### 5.0 Funkcionális terv
+- Rendszer szereplők:
+  - Felhasználó
+- Menü-hierarchiák:
+  - Dashboard
+    - Keresés -> Ország kiválasztása.
+    - Details:
+      - Részletezett adatok szolgáltatása
+  - Map:
+    - Covid térkép súlyozott megjelenítése, fertőzöttek alapján.
+  - Covid-Test:
+    - Result:
+      - Start-State
+      - Test
+      - Result State
 
 ### 6.0 Fizikai környezet
 - Operációs rendszer:
