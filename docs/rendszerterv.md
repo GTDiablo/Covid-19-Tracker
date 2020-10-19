@@ -74,9 +74,10 @@ ha be van kapcsolva a helymeghatározás.
     - Kotlin    
 - Keretrendszer:
     - Gradle
- - Felhasznált API-k:
     - Retrofit
     - Moshi
+    - Retrofit-Moshi adapter
+ - Felhasznált API-k:
     - [Coronavirus COVID19 API](https://documenter.getpostman.com/view/10808728/SzS8rjbc)
  - Cél platform:
     - Android 10 és újabb verziók
