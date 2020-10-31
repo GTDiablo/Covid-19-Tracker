@@ -10,7 +10,6 @@ import com.example.covid_19_tracker.R
 
 class DashboardFragment : Fragment() {
 
-
 	override fun onCreateView(
 		inflater: LayoutInflater, container: ViewGroup?,
 		savedInstanceState: Bundle?
