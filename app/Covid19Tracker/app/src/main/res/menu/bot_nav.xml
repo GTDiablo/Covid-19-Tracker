@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
     <item
         android:id="@+id/nav_dashboard"
         android:icon="@drawable/ic_baseline_dashboard_24"
-        android:title="@string/dashboard"/>
+        android:title="@string/dashboard" />
     <item
         android:id="@+id/nav_map"
         android:icon="@drawable/ic_baseline_map_24"
-        android:title="@string/map"/>
+        android:title="@string/map" />
     <item
         android:id="@+id/nav_test"
         android:icon="@drawable/ic_baseline_test_24"
-        android:title="@string/test"/>
+        android:title="@string/test" />
 </menu>
