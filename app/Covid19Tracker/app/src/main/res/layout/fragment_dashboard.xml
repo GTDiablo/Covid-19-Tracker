@@ -3,4 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.DashboardFragment"/>
+    tools:context=".fragments.DashboardFragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="DasboardFragment"
+        android:gravity="center"
+        android:textColor="@color/light_brown"
+        android:background="@color/light_gray"/>
+
+</FrameLayout>
