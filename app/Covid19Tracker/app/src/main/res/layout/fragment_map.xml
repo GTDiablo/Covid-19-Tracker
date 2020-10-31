@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="MapFragment"
-        android:textSize="20dp"
+        android:textSize="30dp"
         android:gravity="center"
         android:textColor="@color/light_brown"
         android:background="@color/light_gray"/>

@@ -16,12 +16,9 @@ class MainActivity : AppCompatActivity() {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.activity_main)
 		setNavBarOnClickListener()
+		supportFragmentManager.beginTransaction().replace(R.id.fragment_container,DashboardFragment()).commit()
 	}
 
-	override fun onCreateView(parent: View?, name: String, context: Context, attrs: AttributeSet): View? {
-		supportFragmentManager.beginTransaction().replace(R.id.fragment_container,DashboardFragment()).commit()
-		return super.onCreateView(parent, name, context, attrs)
-	}
 
 	fun setNavBarOnClickListener(){
 		val bottomNavbar : BottomNavigationView = findViewById(R.id.menu)
