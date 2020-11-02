@@ -13,4 +13,14 @@
         android:textColor="@color/light_brown"
         android:background="@color/light_gray"/>
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textSize="20dp"
+        android:textColor="@color/light_brown"
+        android:gravity="center"
+        android:padding="7dp"
+        android:cursorVisible="true"
+        />
 </FrameLayout>
