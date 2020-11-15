@@ -43,9 +43,14 @@ class DashboardFragment : Fragment() {
 		val searchBar = view.findViewById<EditText>(R.id.searchBar)
 		searchBar!!.addTextChangedListener(object : TextWatcher {
 			override fun afterTextChanged(s: Editable?) {
+				if (searchBar.text.isNotEmpty()){
 					timer.cancel()
 					timer = Timer()
-					timerSchedule(timer) { Toast.makeText(requireActivity().applicationContext, searchBar.text,Toast.LENGTH_LONG).show()}
+					timerSchedule(timer) {
+						Toast.makeText(requireActivity().applicationContext, searchBar.text,Toast.LENGTH_LONG).show()
+					}
+				}
+
 			}
 
 			override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {/*no-op*/

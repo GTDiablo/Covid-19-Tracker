@@ -1,7 +1,5 @@
 package com.example.covid_19_tracker
 
-package com.example.fragments.movie
-
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,26 +8,26 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.covid_19_tracker.R
 import com.example.covid_19_tracker.models.CountryResponse
 
-class CountriesAdapter(private var movies: List<CountryResponse>,private var clickListener: OnMovieItemClickListener) :
-	RecyclerView.Adapter<CountryResponse.ViewHolder>() {
+class CountriesAdapter(private var countries: List<CountryResponse>,private var clickListener: OnCountryItemClickListener) :
+	RecyclerView.Adapter<CountriesAdapter.ViewHolder>() {
 
 	override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder =
-		ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_movie, parent, false))
+		ViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_country, parent, false))
 
 	override fun onBindViewHolder(viewholder: ViewHolder, position: Int) {
-		viewholder.init(movies[position], clickListener)
+		viewholder.init(countries[position], clickListener)
 	}
 
-	override fun getItemCount(): Int = movies.size
+	override fun getItemCount(): Int = countries.size
 
-	interface OnMovieItemClickListener {
-		fun onItemClick(item: Movie, position: Int)
+	interface OnCountryItemClickListener {
+		fun onItemClick(item: CountryResponse, position: Int)
 	}
 
 	inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 		private val movieTitleView: TextView = itemView.findViewById(R.id.movieItem)
-		fun init(item: Movie, action: OnMovieItemClickListener) {
-			movieTitleView.text = item.title
+		fun init(item: CountryResponse, action: OnCountryItemClickListener) {
+			movieTitleView.text = item.country
 			itemView.setOnClickListener() {
 				action.onItemClick(item, adapterPosition)
 			}
@@ -37,12 +35,12 @@ class CountriesAdapter(private var movies: List<CountryResponse>,private var cli
 	}
 
 	fun clearAdapter() {
-		movies = emptyList()
+		countries = emptyList()
 		notifyDataSetChanged()
 	}
 
-	fun setMovies(mvs: List<Movie>) {
-		movies = mvs
+	fun setMovies(mvs: List<CountryResponse>) {
+		countries = mvs
 		notifyDataSetChanged()
 	}
 }
