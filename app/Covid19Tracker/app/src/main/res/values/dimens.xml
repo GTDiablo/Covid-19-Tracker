@@ -5,4 +5,7 @@
     <dimen name="margin_large">40dp</dimen>
     <dimen name="margin_bigger">32dp</dimen>
     <dimen name="margin_big_roomy">28dp</dimen>
+    <dimen name="margin_big">24dp</dimen>
+    <dimen name="margin_roomy">20dp</dimen>
+    <dimen name="margin_default">16dp</dimen>
 </resources>
