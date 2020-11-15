@@ -11,4 +11,8 @@
     <dimen name="margin_small">12dp</dimen>
     <dimen name="margin_tiny">8dp</dimen>
     <dimen name="margin_extra_tiny">4dp</dimen>
+    <dimen name="font_huge">32sp</dimen>
+    <dimen name="font_extra_large">28sp</dimen>
+    <dimen name="font_large">22sp</dimen>
+
 </resources>
