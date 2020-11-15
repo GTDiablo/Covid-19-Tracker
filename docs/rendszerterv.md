@@ -107,6 +107,20 @@ Mivel nekünk csak a controller és view részével kell foglalkoznunk ezért lo
 - A backend API végpontjai ki vannak szervezve ezért ezt nem kell nekünk külön tesztelni.
 - A modell és API response classok a java beépített teszt könyvtárával lehet ellenőrizni.
 - Minden UI elemet és navigációs proceszt kézzel, emberi forrással kell tesztelni.
-- 
+- Keresési view beírásnál helyesen adja e vissza az ertékeket.
+- A dashboard megkapja és feldolgozza e az initial adatokat.
+- A lekért modellek megfelelnek e a backend modellekkel.
+- Detail view megkapja e a lekért és kijelölt adatokat.
+- A detail view feldogozza rendesen e a gráf adatokat.
+- A detail view megjelenít e mindent fragmentet amit megkapott.
+  
 ### Telepítési terv
+A telepítéshez a következőknek kell meglennie:
+- Android operációs rendszerrel rendelkező készülék.
+- Android verziónak 7.0 vagy újabbnak kell lennie.
+- Internet elérés
+- Google Play store hozzáférés.
+- Elegendő tárhely a készüléken.
+- Minimum 256mb memória megléte.
+
 ### Karbantartási terv
