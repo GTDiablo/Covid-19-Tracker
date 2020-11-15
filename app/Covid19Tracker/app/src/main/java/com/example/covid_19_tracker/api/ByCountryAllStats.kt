@@ -6,6 +6,6 @@ import retrofit2.http.GET
 import retrofit2.http.Path
 
 interface ByCountryAllStats {
-	@GET("users/{user}/repos")
-	fun getInfo(@Path("user") user: String?): Call<List<CountryResponse>>
+	@GET("live/country/{country}")
+	fun getInfo(@Path("country") user: String?): Call<List<CountryResponse>>
 }
