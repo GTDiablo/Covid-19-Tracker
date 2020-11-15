@@ -1,5 +1,6 @@
 package com.example.covid_19_tracker.models
 
+@JsonClass(generateAdapter = true)
 data class CountryResponse(
 @Json(name = "country")
 val Country : String,
