@@ -97,6 +97,12 @@ Az alkalmazásunk az MVC architekturális, tervezési mintát használja. Emiatt
 Mivel nekünk csak a controller és view részével kell foglalkoznunk ezért logikai és kinézeti komponenseket könnyen lehet frissíteni, és akár többet hozzáadni. Az android ui framework-je elegendő forrást tár elénk, hogy minden új dolgot létre tudjunk hozni.
 
 ### Implementációs terv
+- **DashboardFragment.kt** - Ez a UI vezérlő felelős a dashboard logikáért, az azon megjelenített view kezelésért és irányításárért.
+- **MapFragment.kt** - A map nézet eloszlását és view irányításáért szolgál. Ez egy nagy processt ellátó fragment.
+- **DetailFragment.kt** - A Dashboard után ide jutunk el a felkeresett ország adataival és itt dolgozódik fel minden.
+- **CountryResponseApi.kt** - A fő backend endpoint API kérésével foglalkozó processzor.
+- **CountryResponse.kt** - Adat model.
+
 ### Tesztterv
 ### Telepítési terv
 ### Karbantartási terv
