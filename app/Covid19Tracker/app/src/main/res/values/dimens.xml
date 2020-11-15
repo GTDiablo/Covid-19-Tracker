@@ -23,4 +23,7 @@
     <dimen name="lineSpacingTiny">2sp</dimen>
     <dimen name="lineSpacingSmall">4sp</dimen>
     <dimen name="lineSpacingNormal">6sp</dimen> 
+    <dimen name="icon_size_tiny">12dp</dimen>
+    <dimen name="icon_size_small">16dp</dimen>
+    <dimen name="icon_size_default">24dp</dimen>
 </resources>
