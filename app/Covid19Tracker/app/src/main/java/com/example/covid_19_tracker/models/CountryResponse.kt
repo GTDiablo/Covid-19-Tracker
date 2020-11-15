@@ -1,5 +1,8 @@
 package com.example.covid_19_tracker.models
 
+import com.squareup.moshi.Json
+import com.squareup.moshi.JsonClass
+
 @JsonClass(generateAdapter = true)
 data class CountryResponse(
 @Json(name = "country")
