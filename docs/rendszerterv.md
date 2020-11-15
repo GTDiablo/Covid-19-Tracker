@@ -92,6 +92,10 @@ Jelenlegi fellálás:
 - Az android beépített UI könyvtára segítségével jelenítünk meg dolgokat vagy éppen animálunk és a nézetek közt váltunk.
 
 ### Architekturális terv
+Az alkalmazásunk az MVC architekturális, tervezési mintát használja. Emiatt az alkalmazásunk könnyen bővíthető változtatható, mivel az alkalmazás különböző rétegei jól el vannak különítve.
+
+Mivel nekünk csak a controller és view részével kell foglalkoznunk ezért logikai és kinézeti komponenseket könnyen lehet frissíteni, és akár többet hozzáadni. Az android ui framework-je elegendő forrást tár elénk, hogy minden új dolgot létre tudjunk hozni.
+
 ### Implementációs terv
 ### Tesztterv
 ### Telepítési terv
