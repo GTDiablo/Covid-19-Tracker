@@ -104,5 +104,9 @@ Mivel nekünk csak a controller és view részével kell foglalkoznunk ezért lo
 - **CountryResponse.kt** - Adat model.
 
 ### Tesztterv
+- A backend API végpontjai ki vannak szervezve ezért ezt nem kell nekünk külön tesztelni.
+- A modell és API response classok a java beépített teszt könyvtárával lehet ellenőrizni.
+- Minden UI elemet és navigációs proceszt kézzel, emberi forrással kell tesztelni.
+- 
 ### Telepítési terv
 ### Karbantartási terv
