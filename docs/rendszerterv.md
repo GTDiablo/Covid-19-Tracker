@@ -94,7 +94,6 @@ Jelenlegi fellálás:
 ### Architekturális terv
 Az alkalmazásunk az MVC architekturális, tervezési mintát használja. Emiatt az alkalmazásunk könnyen bővíthető változtatható, mivel az alkalmazás különböző rétegei jól el vannak különítve.
 
-Mivel nekünk csak a controller és view részével kell foglalkoznunk ezért logikai és kinézeti komponenseket könnyen lehet frissíteni, és akár többet hozzáadni. Az android ui framework-je elegendő forrást tár elénk, hogy minden új dolgot létre tudjunk hozni.
 
 ### Implementációs terv
 - **DashboardFragment.kt** - Ez a UI vezérlő felelős a dashboard logikáért, az azon megjelenített view kezelésért és irányításárért.
@@ -124,3 +123,4 @@ A telepítéshez a következőknek kell meglennie:
 - Minimum 256mb memória megléte.
 
 ### Karbantartási terv
+Mivel nekünk csak a controller és view részével kell foglalkoznunk ezért logikai és kinézeti komponenseket könnyen lehet frissíteni, és akár többet hozzáadni. Az android ui framework-je elegendő forrást tár elénk, hogy minden új dolgot létre tudjunk hozni.
