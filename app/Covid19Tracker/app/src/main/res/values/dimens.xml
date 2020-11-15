@@ -20,4 +20,7 @@
     <dimen name="font_small">14sp</dimen>
     <dimen name="font_tiny">12sp</dimen>
     <dimen name="font_extra_tiny">10sp</dimen>
+    <dimen name="lineSpacingTiny">2sp</dimen>
+    <dimen name="lineSpacingSmall">4sp</dimen>
+    <dimen name="lineSpacingNormal">6sp</dimen> 
 </resources>
