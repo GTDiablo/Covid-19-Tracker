@@ -81,3 +81,18 @@ ha be van kapcsolva a helymeghatározás.
     - [Coronavirus COVID19 API](https://documenter.getpostman.com/view/10808728/SzS8rjbc)
  - Cél platform:
     - Android 10 és újabb verziók
+
+
+### Absztrak domain modell
+Alkalmazásunk a MVC architekturális modell-t fogja használni. Ami nem más mint a Modell-nézet-vezérlő programtervezési minta.
+
+Jelenlegi fellálás:
+- Backend szerverünk, egy kiszervezett, külön karbantartott és frissített különállú alkalmazás. Innen kapjuk a működéshez szükséges modelleket és adatokat.
+- Java / Kotlin alkalmazásunk a controller, hisz ez dolgozza fel a kapott modelleket és kezeli a logikát.
+- Az android beépített UI könyvtára segítségével jelenítünk meg dolgokat vagy éppen animálunk és a nézetek közt váltunk.
+
+### Architekturális terv
+### Implementációs terv
+### Tesztterv
+### Telepítési terv
+### Karbantartási terv
