@@ -3,8 +3,7 @@ package com.example.covid_19_tracker
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.AttributeSet
-import android.view.View
+import android.widget.FrameLayout
 import androidx.fragment.app.Fragment
 import com.example.covid_19_tracker.fragments.DashboardFragment
 import com.example.covid_19_tracker.fragments.MapFragment
@@ -20,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 	}
 
 
-	fun setNavBarOnClickListener(){
+	private fun setNavBarOnClickListener(){
 		val bottomNavbar : BottomNavigationView = findViewById(R.id.menu)
 		var currentFragment = Fragment()
 		bottomNavbar.setOnNavigationItemSelectedListener { item ->

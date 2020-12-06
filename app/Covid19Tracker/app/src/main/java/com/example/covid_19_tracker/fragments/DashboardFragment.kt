@@ -13,11 +13,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.covid_19_tracker.CountriesAdapter
 import com.example.covid_19_tracker.R
+import com.example.covid_19_tracker.models.Country
 import com.example.covid_19_tracker.utils.CountriesController
 import java.util.Timer
 import java.util.TimerTask
 
-abstract class DashboardFragment() : Fragment(), CountriesAdapter.OnCountryItemClickListener {
+class DashboardFragment() : Fragment(), CountriesAdapter.OnCountryItemClickListener {
 
 	val countriesController = CountriesController()
 	lateinit var countriesAdapter: CountriesAdapter
@@ -33,6 +34,23 @@ abstract class DashboardFragment() : Fragment(), CountriesAdapter.OnCountryItemC
 		initSearchBar(rootView)
 		initRecyclerView(rootView)
 		return rootView
+	}
+
+
+	override fun onItemClick(item: Country, position: Int) {
+		val bundle = Bundle()
+		bundle.putString("countryName", item.country)
+		val detailsFragment = DetailsFragment()
+		detailsFragment.arguments = bundle
+		switchToDetailsFragment(detailsFragment)
+	}
+
+	private fun switchToDetailsFragment(fragment: Fragment) {
+		requireActivity().supportFragmentManager.beginTransaction().run {
+			replace(R.id.fragment_container, fragment)
+			addToBackStack(null)
+			commit()
+		}
 	}
 
 	private fun timerSchedule(timer: Timer, executeUnit: () -> Unit) {
@@ -75,4 +93,5 @@ abstract class DashboardFragment() : Fragment(), CountriesAdapter.OnCountryItemC
 		}
 		)
 	}
+
 }
