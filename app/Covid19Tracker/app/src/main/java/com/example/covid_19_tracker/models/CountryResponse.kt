@@ -1,12 +1,15 @@
 package com.example.covid_19_tracker.models
 
 import com.squareup.moshi.Json
+import com.squareup.moshi.JsonClass
 
+@JsonClass(generateAdapter = true)
 // itt lehet baj a generateJsonAdapter
 data class CountryResponse(
 	val data : List<Country>
 )
 
+@JsonClass(generateAdapter = true)
 data class Country(
 	@Json(name = "Country")
 	val country: String,
