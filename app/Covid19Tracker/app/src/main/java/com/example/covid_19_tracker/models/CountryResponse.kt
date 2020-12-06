@@ -4,6 +4,10 @@ import com.squareup.moshi.Json
 
 // itt lehet baj a generateJsonAdapter
 data class CountryResponse(
+	val data : List<Country>
+)
+
+data class Country(
 	@Json(name = "Country")
 	val country: String,
 	@Json(name = "Confirmed")

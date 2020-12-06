@@ -7,5 +7,5 @@ import retrofit2.http.Path
 
 interface CountryResponseApi {
 	@GET("live/country/{country}")
-	fun getCountry(@Path("country") user: String?): Call<List<CountryResponse>>
+	fun getCountry(@Path("country") user: String): Call<CountryResponse>
 }

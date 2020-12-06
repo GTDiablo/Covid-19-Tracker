@@ -18,5 +18,5 @@ open class CallBuilder() {
 		.build()
 
 	protected fun buildCountryNamesCall(): CountryNamesApi = retrofit().create(CountryNamesApi::class.java)
-	protected fun buildPopularCall(): CountryResponseApi = retrofit().create(CountryResponseApi::class.java)
+	protected fun buildCountryCall(): CountryResponseApi = retrofit().create(CountryResponseApi::class.java)
 }
