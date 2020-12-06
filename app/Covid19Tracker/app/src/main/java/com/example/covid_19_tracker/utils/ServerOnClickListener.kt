@@ -6,8 +6,8 @@ import com.example.covid_19_tracker.models.CountryNames
 
 interface ServerResponseListener {
 	fun getCountry(countries: List<Country>)
-}
 
-interface DetailsResponseListener{
+}
+interface CountryNamesListener {
 	fun getAllCountries(allCountries:List<CountryName>)
 }

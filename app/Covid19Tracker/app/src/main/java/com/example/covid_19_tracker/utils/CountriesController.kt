@@ -8,14 +8,14 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-open class MovieController() : CallBuilder() {
+open class CountriesController() : CallBuilder() {
 
 	fun getCountry(query: String, serverResponseListener: ServerResponseListener) {
 		makeCountriesCall(query, serverResponseListener)
 	}
 
-	fun getAllCountries(movie_Id:Int,detailsResponseListener: DetailsResponseListener){
-		makeAllCountriesCall(movie_Id,detailsResponseListener)
+	fun getAllCountries(countryNamesListener: CountryNamesListener){
+		makeAllCountriesCall(countryNamesListener)
 	}
 
 	private fun makeCountriesCall(query: String, serverResponseListener: ServerResponseListener) {
@@ -26,21 +26,21 @@ open class MovieController() : CallBuilder() {
 			}
 
 			override fun onFailure(call: Call<CountryResponse>, t: Throwable) {
-				Log.e(MovieController::class.java.simpleName, t.message!!)
+				Log.e(CountriesController::class.java.simpleName, t.message!!)
 			}
 		})
 	}
 
 
-	private fun makeAllCountriesCall(serverResponseListener: ServerResponseListener) {
+	private fun makeAllCountriesCall(countryNamesListener: CountryNamesListener) {
 		buildCountryNamesCall().getAllCountries().enqueue(object : Callback<CountryNames> {
 			override fun onResponse(call: Call<CountryNames>, response: Response<CountryNames>) {
 				val countryNamesResponse: CountryNames? = response.body()
-				countryNamesResponse?.countries?.let { serverResponseListener.getCountry(it) }
+				countryNamesResponse?.countries?.let{ countryNamesListener.getAllCountries(it) }
 			}
 
-			override fun onFailure(call: Call<MovieResponse>, t: Throwable) {
-				Log.e(MovieController::class.java.simpleName, t.message!!)
+			override fun onFailure(call: Call<CountryNames>, t: Throwable) {
+				Log.e(CountriesController::class.java.simpleName, t.message!!)
 			}
 		})
 	}

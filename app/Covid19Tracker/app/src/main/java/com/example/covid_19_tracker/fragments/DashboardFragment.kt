@@ -9,15 +9,18 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.covid_19_tracker.CountriesAdapter
 import com.example.covid_19_tracker.R
+import com.example.covid_19_tracker.utils.CountriesController
 import java.util.Timer
 import java.util.TimerTask
 
 abstract class DashboardFragment() : Fragment(), CountriesAdapter.OnCountryItemClickListener {
 
-	val countriesController = Country()
-	lateinit var moviesAdapter: MoviesAdapter
+	val countriesController = CountriesController()
+	lateinit var countriesAdapter: CountriesAdapter
 	private var timer = Timer()
 	private val delay : Long = 500
 
@@ -28,6 +31,7 @@ abstract class DashboardFragment() : Fragment(), CountriesAdapter.OnCountryItemC
 
 		val rootView = inflater.inflate(R.layout.fragment_dashboard, container, false)
 		initSearchBar(rootView)
+		initRecyclerView(rootView)
 		return rootView
 	}
 
@@ -39,6 +43,13 @@ abstract class DashboardFragment() : Fragment(), CountriesAdapter.OnCountryItemC
 				}
 			}
 		}, delay)
+	}
+
+	private fun initRecyclerView(view: View) {
+		val rvCountries = view.findViewById<View>(R.id.countriesRecyclerView) as? RecyclerView
+		countriesAdapter = CountriesAdapter(listOf(), this)
+		rvCountries?.layoutManager = LinearLayoutManager(this.requireContext())
+		rvCountries?.adapter = countriesAdapter
 	}
 
 	private fun initSearchBar(view: View) {
