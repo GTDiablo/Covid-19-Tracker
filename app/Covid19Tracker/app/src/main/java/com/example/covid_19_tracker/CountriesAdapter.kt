@@ -39,7 +39,7 @@ class CountriesAdapter(private var countries: List<CountryResponse>,private var 
 		notifyDataSetChanged()
 	}
 
-	fun setMovies(mvs: List<CountryResponse>) {
+	fun setCountries	(mvs: List<CountryResponse>) {
 		countries = mvs
 		notifyDataSetChanged()
 	}

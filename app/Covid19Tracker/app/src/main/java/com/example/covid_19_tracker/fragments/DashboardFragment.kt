@@ -9,12 +9,15 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.Toast
+import com.example.covid_19_tracker.CountriesAdapter
 import com.example.covid_19_tracker.R
 import java.util.Timer
 import java.util.TimerTask
 
-class DashboardFragment : Fragment() {
+abstract class DashboardFragment() : Fragment(), CountriesAdapter.OnCountryItemClickListener {
 
+	val countriesController = Country()
+	lateinit var moviesAdapter: MoviesAdapter
 	private var timer = Timer()
 	private val delay : Long = 500
 
