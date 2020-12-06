@@ -15,6 +15,7 @@ import com.example.covid_19_tracker.CountriesAdapter
 import com.example.covid_19_tracker.R
 import com.example.covid_19_tracker.models.Country
 import com.example.covid_19_tracker.utils.CountriesController
+import com.example.covid_19_tracker.utils.ServerResponseListener
 import java.util.Timer
 import java.util.TimerTask
 
@@ -78,12 +79,11 @@ class DashboardFragment() : Fragment(), CountriesAdapter.OnCountryItemClickListe
 				if (searchBar.text.isNotEmpty()){
 					timer.cancel()
 					timer = Timer()
-					timerSchedule(timer) {
-						Toast.makeText(requireActivity().applicationContext, searchBar.text,Toast.LENGTH_LONG).show()
-					}
+					fillMovieList(searchBar.text.toString())
 				}
 
 			}
+
 
 			override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {/*no-op*/
 			}
@@ -92,6 +92,26 @@ class DashboardFragment() : Fragment(), CountriesAdapter.OnCountryItemClickListe
 			}
 		}
 		)
+	}
+
+	private fun fillMovieList(query: String) {
+		val countriesController = CountriesController()
+		countriesController.getCountry(query, object : ServerResponseListener {
+			override fun getCountry(countries : List<Country>) {
+				if (countries.isNotEmpty()) {
+					timerSchedule(timer) { countriesAdapter.setCountries(countries) }
+				} else {
+					timerSchedule(timer) {
+						countriesAdapter.clearAdapter()
+						Toast.makeText(
+							requireActivity().applicationContext,
+							"Couldn't find any movies that matches : $query",
+							Toast.LENGTH_LONG
+						).show()
+					}
+				}
+			}
+		})
 	}
 
 }
