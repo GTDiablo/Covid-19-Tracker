@@ -7,6 +7,7 @@ dependencies {
     testImplementation 'org.mockito:mockito-core:1.10.19'
 }
 
+// Kotlin beépített test pluginja automatán csinálja a integration-t
 import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
