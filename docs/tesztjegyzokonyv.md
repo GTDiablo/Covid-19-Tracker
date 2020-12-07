@@ -18,7 +18,7 @@ Alkalmazás megfeleől működése, backend és 'frontend' meglefelő szinkroniz
 Tesztelés célja
 ---------------
 
-
+Rossz funkcionalitás, esetleges rossz kalkuláció, route és logic hiba kiszűrése.
 
 
 Tesztelők
