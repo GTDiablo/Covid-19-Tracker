@@ -40,11 +40,20 @@ Tesztelők
 **Unit és integration tesztek**
 
 - Teszt 1: MainActivity.kt renszeresen frissít-e a megfelelő adatokkal.
-- TestT 2: 
+- Teszt 2: MapActivity.kt körök nagysága megfelelő-e
+- Teszt 3:
 
 
 #### Mester Ákos
 **Unit és integration tesztek**
 
+- Teszt 1: MainActivity.kt renszeresen frissít-e a megfelelő adatokkal.
+- Teszt 2: MapActivity.kt körök nagysága megfelelő-e
+- Teszt 3:
+
 #### Boda Zsolt
 **Unit és Manuális tesztek**
+
+- Teszt 1: MainActivity.kt renszeresen frissít-e a megfelelő adatokkal.
+- Teszt 2: MapActivity.kt körök nagysága megfelelő-e
+- Teszt 3:
