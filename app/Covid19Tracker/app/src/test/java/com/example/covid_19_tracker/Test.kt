@@ -29,6 +29,7 @@ import androidx.test.core.app.ApplicationProvider
 import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
+// Eze a keresési stringet szimulálja 
 private const val FAKE_STRING = "HUNGARY"
 
 class UnitTestSample {
