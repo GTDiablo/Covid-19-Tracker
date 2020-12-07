@@ -78,3 +78,4 @@ Tesztelők
 Összefoglalás
 -------------
 Az alkalmazás a felsorolt teszteken átment gond nélkül, kivéve a következőn, ami a mi oldalunkról nem javítható: Android v.11 Queen Cake verzión az alkalmazás összeomlik view / activity váltásnál. Ez az ahozz kiadott android API hibája, ami nem a mi oldalunkon törik el, így nem tudunk ezzel mit tenni és nem is tudunk rajta körbemenni. A kotlin jvm pluginok miatt, a különböző android verziókra való build manuálisan szükséges.
+
