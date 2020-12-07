@@ -23,3 +23,8 @@ Rossz funkcionalitás, esetleges rossz kalkuláció, route és logic hiba kiszű
 
 Tesztelők
 ---------
+#### Raska Gergely
+
+#### Mester Ákos
+
+#### Boda Zsolt
