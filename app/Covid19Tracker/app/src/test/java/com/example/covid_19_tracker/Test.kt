@@ -29,7 +29,7 @@ import androidx.test.core.app.ApplicationProvider
 import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
-private const val FAKE_STRING = "HELLO_WORLD"
+private const val FAKE_STRING = "HUNGARY"
 
 class UnitTestSample {
     val context = ApplicationProvider.getApplicationContext<Context>()
