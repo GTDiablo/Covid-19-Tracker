@@ -23,8 +23,14 @@ Rossz funkcionalitás, esetleges rossz kalkuláció, route és logic hiba kiszű
 
 Tesztelők
 ---------
+
 #### Raska Gergely
 
+**Unit és integration tesztek**
+
+
 #### Mester Ákos
+**Unit és integration tesztek**
 
 #### Boda Zsolt
+**Unit és Manuális tesztek**
