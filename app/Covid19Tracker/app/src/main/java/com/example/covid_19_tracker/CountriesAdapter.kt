@@ -1,5 +1,6 @@
 package com.example.covid_19_tracker
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,9 +8,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.covid_19_tracker.R
 import com.example.covid_19_tracker.models.Country
+import com.example.covid_19_tracker.models.CountryName
 import com.example.covid_19_tracker.models.CountryResponse
 
-class CountriesAdapter(private var countries: List<Country>,private var clickListener: OnCountryItemClickListener) :
+class CountriesAdapter(private var countries: List<CountryName>,private var clickListener: OnCountryItemClickListener) :
 	RecyclerView.Adapter<CountriesAdapter.ViewHolder>() {
 
 	override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder =
@@ -22,13 +24,13 @@ class CountriesAdapter(private var countries: List<Country>,private var clickLis
 	override fun getItemCount(): Int = countries.size
 
 	interface OnCountryItemClickListener {
-		fun onItemClick(item: Country, position: Int)
+		fun onItemClick(item: CountryName, position: Int)
 	}
 
 	inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-		private val movieTitleView: TextView = itemView.findViewById(R.id.movieItem)
-		fun init(item: Country, action: OnCountryItemClickListener) {
-			movieTitleView.text = item.country
+		private val countriyTextView: TextView = itemView.findViewById(R.id.movieItem)
+		fun init(item: CountryName, action: OnCountryItemClickListener) {
+			countriyTextView.text = item.country
 			itemView.setOnClickListener() {
 				action.onItemClick(item, adapterPosition)
 			}
@@ -40,8 +42,16 @@ class CountriesAdapter(private var countries: List<Country>,private var clickLis
 		notifyDataSetChanged()
 	}
 
-	fun setCountries	(mvs: List<Country>) {
+	fun setCountries(mvs: List<CountryName>) {
 		countries = mvs
 		notifyDataSetChanged()
+	}
+
+	fun getCountries(query : String) : List<CountryName>{
+		Log.d("itt mi van","?")
+		val c = countries.toMutableList()
+		val new_c = c.filter { it.country.contains(query) }
+
+		return new_c.toList()
 	}
 }

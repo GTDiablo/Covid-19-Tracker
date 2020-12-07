@@ -4,10 +4,6 @@ import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
-data class CountryNames(
-	val countries : List<CountryName>
-)
-@JsonClass(generateAdapter = true)
 data class CountryName(
 	@Json(name = "Country")
 	val country: String,

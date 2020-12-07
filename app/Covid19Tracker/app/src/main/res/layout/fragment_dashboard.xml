@@ -27,18 +27,34 @@
 
     <EditText
         android:id="@+id/searchBar"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:textSize="@dimen/text_size_large"
         android:textColor="@color/light_brown"
         android:gravity="center"
         android:padding="@dimen/padding_small"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintWidth_percent=".7"
         android:cursorVisible="true"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/searchBtn"
         app:layout_constraintBottom_toTopOf="@id/countriesRecyclerView"
         />
+        <ImageButton
+            android:id="@+id/searchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintHeight_percent=".05"
+            app:layout_constraintWidth_percent=".2"
+            android:background="@color/light_brown"
+            android:src="@drawable/ic_icons8_search"
+            app:layout_constraintLeft_toRightOf="@id/searchBar"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/searchBar"
+            app:layout_constraintBottom_toBottomOf="@id/searchBar"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

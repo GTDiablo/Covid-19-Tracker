@@ -1,10 +1,10 @@
 package com.example.covid_19_tracker.api
 
-import com.example.covid_19_tracker.models.CountryNames
+import com.example.covid_19_tracker.models.CountryName
 import retrofit2.Call
 import retrofit2.http.GET
 
 interface CountryNamesApi {
 	@GET("countries")
-	fun getAllCountries(): Call<CountryNames>
+	fun getAllCountries(): Call<List<CountryName>>
 }

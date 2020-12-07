@@ -18,6 +18,11 @@
         <item name="android:textStyle">normal</item>
     </style>
 
+    <style name ="Box">
+        <item name = "android:background">@drawable/light_box_bg</item>
+        <item name = "android:textColor">@color/white</item>
+    </style>
+
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />

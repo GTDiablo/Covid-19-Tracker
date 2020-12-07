@@ -2,7 +2,7 @@ package com.example.covid_19_tracker.utils
 
 import com.example.covid_19_tracker.models.Country
 import com.example.covid_19_tracker.models.CountryName
-import com.example.covid_19_tracker.models.CountryNames
+import com.example.covid_19_tracker.models.CountryResponse
 
 interface ServerResponseListener {
 	fun getCountry(countries: List<Country>)

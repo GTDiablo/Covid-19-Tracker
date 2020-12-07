@@ -8,7 +8,6 @@ import com.squareup.moshi.JsonClass
 data class CountryResponse(
 	val data : List<Country>
 )
-
 @JsonClass(generateAdapter = true)
 data class Country(
 	@Json(name = "Country")
@@ -20,5 +19,7 @@ data class Country(
 	@Json(name = "Recovered")
 	val recovered: Int,
 	@Json(name = "Active")
-	val active: Int
+	val active: Int,
+	@Json(name = "Date")
+	val date : String
 )
