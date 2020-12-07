@@ -20,13 +20,27 @@ Tesztelés célja
 
 Rossz funkcionalitás, esetleges rossz kalkuláció, route és logic hiba kiszűrése.
 
+Backend postman-es tesztelése
+-----------------------------
+Postman API request tesztelőt a következő linken lehet letölteni: [Postman](https://www.postman.com/)
+
+
+![Backend Test](img/Screenshot-20201207090156-1637x401.png)
+![Backend Test](img/2.png)
+![Backend Test](img/3.png)
+![Backend Test](img/4.png)
+![Backend Test](img/5.png)
+
+
 
 Tesztelők
 ---------
 
 #### Raska Gergely
-
 **Unit és integration tesztek**
+
+- Teszt 1: MainActivity.kt renszeresen frissít-e a megfelelő adatokkal.
+- TestT 2: 
 
 
 #### Mester Ákos
